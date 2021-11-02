@@ -1,0 +1,30 @@
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+/*Шапка */
+.logo {
+  color: #2196f3;
+}
+.list {
+  list-style: none;
+}
+
+/*Main*/
+.section-title {
+  color: #212121;
+}
+/*основные шрифты 
+
+h1 #FFFFFF
+blue #2196F3
+
+ h3 background: #212121;
+text background: #757575; 
+
+h2 #757575
+h2 #757575
+names #757575
+position #757575
+
+*/
