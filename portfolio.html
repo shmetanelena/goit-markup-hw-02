@@ -4,146 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка-->
-    <header>
+    <header class="header">
       <nav>
-        <a href="/" class="logo">WebStudio</a>
+        <a href="/" class="logo link"
+          >Web<span class="header-logo-accent">Studio</span></a
+        >
 
-        <ul class="site-nav list">
-          <li><a href="">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="header-nav list">
+          <li><a class="header-nav-link link" href="">Студия</a></li>
+          <li>
+            <a
+              class="header-nav-link link"
+              href="./portfolio.html"
+              target="_blank"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="header-nav-link link" href="">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="contact-nav">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="header-contact list">
+        <li>
+          <a class="header-contact-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="header-contact-link link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
 
     <main>
-      <section>
+      <section class="portfolio">
         <!--Скрыла название заголовка секции с помощью hidden-->
-        <h2 hidden>Примеры наших работ</h2>
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
-        </ul>
-
-        <ul>
-          <!--Портфолио Карточка 1 Ноутбук-->
+        <h2 class="portfolio-h" hidden>Примеры наших работ</h2>
+        <ul class="portfolio-list list">
+          <li><button class="portfolio-button" type="button">Все</button></li>
           <li>
-            <a href=""
+            <button class="portfolio-button" type="button">Веб-сайты</button>
+          </li>
+          <li>
+            <button class="portfolio-button" type="button">Приложения</button>
+          </li>
+          <li>
+            <button class="portfolio-button" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="portfolio-button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <!--КАРТОЧКИ-->
+
+        <ul class="cards list">
+          <!--Портфолио Карточка 1 Ноутбук-->
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfferst.jpg"
                 alt="Открытый ноутбук с тремя картинками людей"
                 width="370"
               />
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
+              <h3 class="cards-h">Технокряк</h3>
+              <p class="cards-text">Веб-сайт</p>
             </a>
           </li>
           <!--Портфолио Карточка 2 Баскетбол-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfbasket.jpg"
                 alt="Два баскетболиста в прыжке с мячом"
                 width="370"
               />
-              <h3>Постер <span lang="en">Nem Orlean vs Golden Star</span></h3>
-              <p>Дизайн</p>
+              <h3 class="cards-h">
+                Постер <span lang="en">Nem Orlean vs Golden Star</span>
+              </h3>
+              <p class="cards-text">Дизайн</p>
             </a>
           </li>
           <!--Портфолио Карточка 3 Ресторан-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfseafood.jpg"
                 alt="Название ресторана на фоне акулы"
                 width="370"
               />
-              <h3>Ресторан <span lang="en">Seafood</span></h3>
-              <p>Приложение</p>
+              <h3 class="cards-h">Ресторан <span lang="en">Seafood</span></h3>
+              <p class="cards-text">Приложение</p>
             </a>
           </li>
           <!--Портфолио Карточка 4 Наушники-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfprime.jpg"
                 alt="Черные большие наушники"
                 width="370"
               />
-              <h3>Проект <span lang="en">Prime</span></h3>
-              <p>Маркетинг</p>
+              <h3 class="cards-h">Проект <span lang="en">Prime</span></h3>
+              <p class="cards-text">Маркетинг</p>
             </a>
           </li>
           <!--Портфолио Карточка 5 Боксы-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfboxes.jpg"
                 alt="<Белый большой бокс и коричневый бокс поменьше>"
                 width="370"
               />
-              <h3>Постер <span lang="en">Boxes</span></h3>
-              <p>Приложение</p>
+              <h3 class="cards-h">Постер <span lang="en">Boxes</span></h3>
+              <p class="cards-text">Приложение</p>
             </a>
           </li>
           <!--Портфолио Карточка 6 Моноблок-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfinspiration.jpg"
                 alt="<Большой моноблок с изображением карт на экране>"
                 width="370"
               />
-              <h3><span lang="en">Inspiration has no Borders</span></h3>
-              <p>Веб-сайт</p>
+              <h3 class="cards-h">
+                <span lang="en">Inspiration has no Borders</span>
+              </h3>
+              <p class="cards-text">Веб-сайт</p>
             </a>
           </li>
           <!--Портфолио Карточка 7 Журнал-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portflimitededition.jpg"
                 alt="Открытый глянцевый журнал"
                 width="370"
               />
-              <h3>Издание<span lang="en">Limited Edition</span></h3>
-              <p>Дизайн</p>
+              <h3 class="cards-h">
+                Издание <span lang="en">Limited Edition</span>
+              </h3>
+              <p class="cards-text">Дизайн</p>
             </a>
           </li>
           <!--Портфолио Карточка 8 LAB-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portflab.jpg"
-                alt="<Бирка с рекламой ЛАБ>"
+                alt="Бирка с рекламой"
                 width="370"
               />
-              <h3>Проект <span lang="en">LAB</span></h3>
-              <p>Маркетинг</p></a
+              <h3 class="cards-h">Проект <span lang="en">LAB</span></h3>
+              <p class="cards-text">Маркетинг</p></a
             >
           </li>
           <!--Портфолио Карточка 9 Business-->
-          <li>
-            <a href=""
+          <li class="cards-item">
+            <a class="cards-link link" href=""
               ><img
                 src="./images/portfbusiness.jpg"
                 alt="Открытый ноутбук, на нем печатают"
                 width="370"
               />
-              <h3><span lang="en">Growing Business</span></h3>
-              <p>Приложение</p>
+              <h3 class="cards-h"><span lang="en">Growing Business</span></h3>
+              <p class="cards-text">Приложение</p>
             </a>
           </li>
         </ul>
@@ -151,18 +190,31 @@
     </main>
 
     <!--Футер-->
-    <footer>
-      <a href="/">WebStudio</a>
+    <footer class="footer">
+      <a class="logo link" href="/"
+        >Web<span class="footer-logo-accent">Studio</span></a
+      >
 
-      <address>
-        <ul>
+      <address classt="footer-addr">
+        <ul class="footer-addr-list list">
           <li>
-            <a href="https://goo.gl/maps/nk7uNHykZLFtEG5r5"
+            <a
+              class="footer-addr-link link"
+              href="https://goo.gl/maps/nk7uNHykZLFtEG5r5"
+              target="_blank"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a class="footer-mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-phone-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
