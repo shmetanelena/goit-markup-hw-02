@@ -83,6 +83,7 @@ body {
   vertical-align: center;
   color: var(--main-title-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 /*Наши преимущества
 Внимание к деталям\Пунктуальность\Планирование\Современные технологии*/
@@ -157,6 +158,7 @@ body {
 .footer-phone-link {
   color: rgba(255, 255, 255, 0.6);
 }
+
 /*=====РАЗМЕТКА ДЛЯ ПОРТФОЛИО========*/
 /*ККНОПКИ*/
 .portfolio-button {
@@ -167,6 +169,7 @@ body {
   text-align: center;
   color: var(--title-colorr);
   background-color: var(--other-background-color);
+  cursor: pointer;
 }
 .portfolio-button:hover,
 .portfolio-button :focus {
