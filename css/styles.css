@@ -1,12 +1,11 @@
-/* Шрифты
-Roboto:
-Regular 400
-Medium 500
-Bold 700
-Black 900*
-Raleway:
-Bold 700
-*/
+/*=====РАЗМЕТКА ДЛЯ INDEX.HTML========*/
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #757575;
+}
+
 :root {
   --main-title-color: #ffffff;
   --title-color: #212121;
@@ -16,12 +15,6 @@ Bold 700
   --other-background-color: #f5f4fa;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  background-color: #ffffff;
-  color: #757575;
-}
 /*список не маркированный*/
 .list {
   list-style: none;
